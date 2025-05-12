@@ -1,3 +1,19 @@
+///(funtion () {
+///'use strict';
+
+///x= "hello";
+
+///angular.module('myFirstApp',[])
+
+///.controller('myFirstController', function($scope){
+///  $scope.name = "Rani";
+
+///});
+
+///})();
+
+/// --------------
+
 var student = {
   name: "",
   type: "student"
@@ -15,13 +31,14 @@ funtion keyUp(event){
 
 funtion calculateNumaricOutput(){
   student.name = document.getElementById('name').value;
+
   var totalNameValue = 0;
   for (var i=0; i< student.name.length; i++){
     totalNameValue += student.name.charCodeAt(i);
   }
 
   /// insert result into Page
-  var output = "Total Numaric Value of Person's name is "+totalNameValue;
+  var output = "Total Numaric Value of Person's name is " + totalNameValue;
   document.getElementById('output').innerText = output;
 
 }
